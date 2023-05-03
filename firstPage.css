@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/*Logo keliye he*/
+.header{
+    width: 100%;
+    height: 100vh;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+    align-self: center;
+}
+/*Navigation bar starts here*/
+.topNav{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 70px;
+    height: 100vw;
+    padding: 10px 1px;
+    background-color: #000000;
+    transition: width 0.7s;
+    overflow: hidden;
+    /*display: flex
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    margin: auto;
+    */
+    
+}
+ul{
+    list-style: none;
+    padding: 0px 15px;
+}
+ul li{
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+ul li img{
+    width: 30px;
+    margin-right: 10px;
+}
+ul li a{
+    white-space: nowrap;
+    display: none;
+}
+.topNav ul li{
+    list-style: none;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+}
+.topNav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+/*.topNav a:hover{
+    background-color: white;
+    color: black;
+    display: block;
+}*/
+.topNav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0px;
+    background: #ffffff;
+    position: absolute;
+    left: 10px;
+    bottom: -3px;
+    transition: 0.7s;
+}
+.topNav:hover{
+    width: 170px;
+}
+.topNav:hover  ul li a{
+    display: block;
+    justify-content: flex-start;
+}
+.topNav ul li:hover::after{
+    width: 130px;
+    z-index: 10;
+}
+
+
+/*beech ke content keliye*/
+.image{
+    margin-left: 10px;
+    margin-right: 0px;
+    width: 100%;
+    height: 550px;
+    background-image:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(Pc\ build.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.text{
+    left: 50px;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    text-align: center;
+    color:#fff;
+    font-size: 3.75em;
+    
+}
+.text h1{
+    text-align: center;
+    font-size: 7vw;
+
+}
+
+button{
+    width: 200px;
+    padding: 15px 0px;
+    text-align: center;
+    margin: 20px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: white;
+}
+
+.content{
+    text-align: center;
+}
+.content h1{
+    font-size: xx-larger;
+}
+.content p{
+    font-size: small;
+}
+.coloumn{
+    float: left;
+    left: 170px;
+    width: 33.33%;
+    padding: 1px;
+}
+.coloumnR{
+    float: center;
+    /*left: 170px;*/
+    margin: auto;
+    padding: 1px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    width: 30%;
+    height: 200px;
+    background-image:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url(pexels-ketut-subiyanto-4246120.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+.coloumnM{
+    float: center;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 1px;
+    width: 30%;
+    height: 200px;
+    background-image:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url(istockphoto-1314343964-612x612.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+.coloumnL{
+    float: center;
+    margin: auto;
+    padding: 1px;
+    margin-bottom: 50px;
+    width: 30%;
+    height: 200px;
+    background-image:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url(laser-engraver-for-metal.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (min-width: 480px) {
+    .content, .image {
+      width: auto;
+    }
+  }
+.footer{
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+  
